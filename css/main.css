@@ -118,7 +118,9 @@ a {
   left: 15px;
   background-color: var(--color-border);
 }
-
+/* ......................... */
+/* ......... HEADER .........*/
+/* ......................... */
 .header {
   position: relative;
 }
@@ -152,6 +154,19 @@ a {
   font-size: var(--fs-small);
   font-weight: 400;
   letter-spacing: 0.5px;
+}
+@media (min-width: 1200px) {
+  .quote-wrapper {
+    width: 1260px;
+  }
+  .quote-box p {
+    font-size: 34px;
+    line-height: 46px;
+    margin-bottom: 15px;
+  }
+  .quote-box cite {
+    font-size: var(--fs-medium);
+  }
 }
 
 @media (max-width: 768px) {
