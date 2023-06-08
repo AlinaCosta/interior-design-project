@@ -74,11 +74,18 @@ a {
   height: 60px;
   padding: 0 var(--spacing-medium);
   border-bottom: var(--border);
+  border-top: 1px solid transparent;
   background-color: var(--color-white);
 }
+
 .navbar__logo img {
   width: auto;
   height: 15px;
+}
+
+.navbar__logo {
+  display: flex;
+  padding-top: 1px;
 }
 .navbar .menu-icon {
   color: var(--color-dark);
