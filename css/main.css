@@ -511,3 +511,67 @@ footer {
     height: 600px;
   }
 }
+
+@media (max-width: 480px) {
+  .header-mobile__text-box {
+    padding: 3rem 2rem;
+  }
+  .header-mobile__text-box .heading-primary--main {
+    font-size: 44px;
+  }
+  .header-mobile__text-box .heading-primary--sub {
+    font-size: 14px;
+  }
+  .header-mobile__text-box .btn {
+    font-size: 15px;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+  }
+  .container {
+    padding: 30px;
+  }
+  .section-design {
+    padding: 2rem 0;
+  }
+
+  .section-design .heading-secondary {
+    font-size: 46px;
+  }
+  .section-design .main-paragraph {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  .design-container {
+    margin-top: 1rem;
+  }
+
+  .card__heading {
+    font-size: 24px;
+    padding: 0.5rem 0;
+  }
+
+  .section-about {
+    padding: 2rem 0;
+  }
+
+  .about-content {
+    padding: 0 0.5rem;
+  }
+  .about-content .heading-secondary {
+    font-size: 2.2rem;
+  }
+  .about-content .main-paragraph {
+    font-size: 1rem;
+  }
+  .about-content .btn {
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+  }
+  .about-bg {
+    height: 400px;
+  }
+  footer {
+    padding: 1rem 0;
+  }
+}
