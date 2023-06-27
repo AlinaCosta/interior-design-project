@@ -15,11 +15,15 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Questrial&display=swap"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/home.css" />
@@ -28,12 +32,15 @@
     <nav class="navigation">
       <div class="nav-container">
         <a href="index.html" class="navigation__logo">
-          <img src="img/Studio McGee.svg" alt="Studio McGee logo" />
+          <img src="img/sm_logo_05.png" alt="Studio McGee logo" />
         </a>
         <div class="menu-icon-container">
           <span class="material-icons menu-icon"> menu </span>
           <input type="checkbox" />
           <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#" target="_blank">Home</a>
+            </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#" target="_blank">Design</a>
             </li>
@@ -53,100 +60,108 @@
       </div>
     </nav>
     <header class="header">
-      <div
-        id="carouselExampleFade"
-        class="carousel carousel-dark slide carousel-fade"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <!-- <img
-              src="img/Essentials for Summer Entertaining - Studio McGee.jpg"
-              class="w-100"
-              alt="..."
-            /> -->
-            <div class="carousel-item-box">
-              <div class="hero-img hero-img-1"></div>
-
-              <div class="hero-text">
-                <p>Design</p>
-                <h1>Essentials for Summer Entertaining</h1>
-                <p>
-                  One of the greatest parts about summer, hosting in the great
-                  outdoors.
-                </p>
+      <div class="header__text-box">
+        <span class="heading-primary--sub"
+          >our main mission is to help you</span
+        >
+        <h1 class="heading-primary--main">
+          Enjoy beauty in your own <span>home</span>
+        </h1>
+        <a href="#section-services" class="btn">View our services</a>
+      </div>
+    </header>
+    <div class="header-mobile">
+      <div class="header-mobile__text-box">
+        <span class="heading-primary--sub"
+          >our main mission is to help you</span
+        >
+        <h1 class="heading-primary--main">
+          Enjoy beauty in your own <span>home</span>
+        </h1>
+        <a href="#section-services" class="btn">View our services</a>
+      </div>
+    </div>
+    <main>
+      <div class="section-design">
+        <div class="container center-text">
+          <!-- <span class="subheading">Design</span> -->
+          <h2 class="heading-secondary">Get Inspired.</h2>
+          <p class="main-paragraph">
+            This is a space where we share it all. We’re just happy you’ve
+            joined us along the way!
+          </p>
+          <div class="design-container">
+            <div class="card-wrapper">
+              <div class="card">
+                <img src="img/hero-img-01.jpg" alt="" />
+                <div class="content">
+                  <h3 class="card__heading">DESIGN TIPS</h3>
+                  <a class="btn-design" href="#">CLICK TO LEARN MORE</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <!-- <img
-              src="img/Inside The Trend  Open-Weave Knits - Studio McGee.jpg"
-              class="w-100"
-              alt="..."
-            /> -->
-            <div class="carousel-item-box">
-              <div class="hero-img hero-img-2"></div>
-              <div class="hero-text">
-                <p>Design</p>
-                <h1>Essentials for Summer Entertaining</h1>
-                <p>
-                  One of the greatest parts about summer, hosting in the great
-                  outdoors.
-                </p>
+            <div class="card-wrapper">
+              <div class="card">
+                <img src="img/hero-img-02.png" alt="" />
+                <div class="content">
+                  <h3 class="card__heading">ROOM INSPIRATION</h3>
+                  <a class="btn-design" href="#">CLICK TO LEARN MORE</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <!-- <img src="img/Scent Profiles No. 03 White Bergamot - Studio
-            McGee.jpg" class= w-100" alt="..." /> -->
-            <div class="carousel-item-box">
-              <div class="hero-img hero-img-3"></div>
-              <div class="hero-text">
-                <p>Design</p>
-                <h1>Essentials for Summer Entertaining</h1>
-                <p>
-                  One of the greatest parts about summer, hosting in the great
-                  outdoors.
-                </p>
+            <div class="card-wrapper">
+              <div class="card">
+                <img src="img/hero-img-03.jpg" alt="" />
+                <div class="content">
+                  <h3 class="card__heading">THE MCGEE HOME</h3>
+                  <a class="btn-design" href="#">CLICK TO LEARN MORE</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      <!-- <div class="hero-img"></div> -->
-      <!-- <div class="quote-wrapper">
-        <blockquote class="quote-box">
-          <p>
-            "Good design has the ability to impact the way you feel, and we want
-            all of our clients to feel that sense of peace when they walk
-            through the door."
-          </p>
-          <cite>— SHEA MCGEE</cite>
-        </blockquote>
-      </div> -->
-    </header>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+      <div class="section-about">
+        <div class="container">
+          <div class="about-box">
+            <div class="about-content">
+              <span class="subheading">About</span>
+              <h2 class="heading-secondary">
+                Born from the idea of making life beautiful.
+              </h2>
+              <p class="main-paragraph">
+                Studio McGee is a full-service interior design firm that designs
+                homes from concept to completion all over the US. We have
+                garnered a reputation for beautifully balanced spaces that feel
+                refreshingly modern and endlessly classic. We create custom
+                interiors for full new builds and renovations that stand the
+                test of time.
+              </p>
+              <p class="main-paragraph">
+                Based out of Salt Lake City, our team has designed hundreds of
+                projects across 33 states (and counting), which has led us to
+                develop and refine a seamless process to help our clients
+                navigate each step. Our designers collaborate from the floor
+                plan development, interior drawings, custom cabinetry, finishes,
+                and selections: furniture, window treatments, styling, and
+                turn-key installation.
+              </p>
+              <a href="#section-about" class="btn"
+                >Read More
+                <span class="material-icons chevron-right-icon">
+                  chevron_right
+                </span>
+              </a>
+            </div>
+            <div class="about-bg"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>Copyright &copy; 2023 by Alina Costa. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
