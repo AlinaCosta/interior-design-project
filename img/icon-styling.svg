@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 32</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 76 75.401 76 75.401 0.604 0 0.604"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DESKTOP_THESTUDIO" transform="translate(-855.000000, -3282.000000)">
+            <g id="Group-32" transform="translate(855.000000, 3281.000000)">
+                <g id="Group-6" transform="translate(0.000000, 0.396000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.4">
+                    <polygon id="Stroke-1" points="0.2 72.053 40.201 72.053 40.201 4.553 0.2 4.553"></polygon>
+                    <polygon id="Stroke-3" points="0.2 4.553 75.201 4.553 75.201 0.804 0.2 0.804"></polygon>
+                    <polygon id="Stroke-4" points="0.2 75.8 75.201 75.8 75.201 72.052 0.2 72.052"></polygon>
+                    <polygon id="Stroke-5" points="40.201 38.303 75.201 38.303 75.201 21.427 40.201 21.427"></polygon>
+                </g>
+                <polygon id="Stroke-7" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" points="40.201 38.699 43.95 38.699 43.95 26.198 40.201 26.198"></polygon>
+                <polygon id="Stroke-8" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" points="43.95 38.699 47.701 38.699 47.701 26.198 43.95 26.198"></polygon>
+                <polygon id="Stroke-9" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" points="47.701 38.699 51.45 38.699 51.45 26.198 47.701 26.198"></polygon>
+                <polygon id="Stroke-10" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" points="51.45 38.699 55.201 38.699 55.201 26.198 51.45 26.198"></polygon>
+                <polygon id="Stroke-11" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" points="60.2 38.699 55.198 38.699 55.198 33.698"></polygon>
+                <polygon id="Stroke-12" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" points="71.452 38.699 75.201 38.699 75.201 26.198 71.452 26.198"></polygon>
+                <polygon id="Stroke-14" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" points="67.7 38.699 71.449 38.699 71.449 26.198 67.7 26.198"></polygon>
+                <g id="Group-20" transform="translate(40.000000, 4.396000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.4">
+                    <polygon id="Stroke-15" points="0.201 17.427 35.201 17.427 35.201 0.553 0.201 0.553"></polygon>
+                    <polygon id="Stroke-17" points="20.2 17.427 35.201 17.427 35.201 13.679 20.2 13.679"></polygon>
+                    <polygon id="Stroke-18" points="20.2 13.679 35.201 13.679 35.201 9.927 20.2 9.927"></polygon>
+                    <polygon id="Stroke-19" points="20.2 9.927 35.201 9.927 35.201 6.179 20.2 6.179"></polygon>
+                </g>
+                <polygon id="Stroke-21" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" points="52.6971 21.823 47.6981 21.823 45.2001 9.324 55.1981 9.324"></polygon>
+                <g id="Group-31" transform="translate(0.000000, 0.396000)">
+                    <path d="M32.698,32.052 C31.317,32.052 30.2,33.172 30.2,34.55 L30.197,42.054 C30.197,43.434 31.317,44.555 32.698,44.555 C31.317,44.555 30.197,43.434 30.197,42.054 L30.2,34.55 C30.2,33.171 31.316,32.052 32.698,32.052 Z" id="Stroke-22" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-25"></g>
+                    <polygon id="Stroke-24" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="40.201 55.177 57.699 55.177 57.699 38.303 40.201 38.303"></polygon>
+                    <polygon id="Stroke-26" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="40.201 72.052 75.201 72.052 75.201 55.177 40.201 55.177"></polygon>
+                    <path d="M46.451,46.74 L51.45,46.74 L46.451,46.74 Z" id="Stroke-27" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></path>
+                    <path d="M55.199,63.6145 L60.198,63.6145 L55.199,63.6145 Z" id="Stroke-28" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></path>
+                    <polygon id="Stroke-29" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="57.699 55.177 75.201 55.177 75.201 38.303 57.699 38.303"></polygon>
+                    <path d="M63.949,46.74 L68.948,46.74 L63.949,46.74 Z" id="Stroke-30" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

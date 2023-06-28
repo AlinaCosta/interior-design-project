@@ -81,7 +81,7 @@ a {
 
 .navigation__logo img {
   width: auto;
-  height: 110px;
+  height: 115px;
   padding: 20px 0;
 }
 
@@ -263,6 +263,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.03rem;
   font-size: 24px;
+  line-height: 1.2;
   color: rgba(41, 41, 41, 1);
   font-family: 'Nanum Myeongjo', serif;
   font-weight: 400;
@@ -296,7 +297,6 @@ a {
 .about-box {
   display: flex;
   flex-wrap: wrap;
-  min-height: 100vh;
 }
 .about-content {
   width: calc(100% / 2);
@@ -319,14 +319,82 @@ a {
   vertical-align: middle;
   color: rgba(41, 41, 41, 0.6);
 }
+/* ................................ */
+/* ......... SERVICES SECTION .........*/
+/* ................................ */
+.section-services {
+  padding: 6.25rem 0;
+  background-color: #303030;
+}
+.services-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 72px;
+}
+.services-box-1 {
+  width: calc(100% / 2);
+  padding-right: 6rem;
+}
+.services-box-1 img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+.services-box-1 > * {
+  color: #fff;
+}
+.services-box-1 .heading-secondary {
+  letter-spacing: -1px;
+  padding: 0.5rem 0;
+}
+.services-box-1 .btn {
+  margin-top: 1.5rem;
+  background-color: #4b4b4b;
+}
+.services-box-1 .chevron-right-icon {
+  color: #fff;
+}
+.services-box-2 {
+  width: calc(100% / 2);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.step-1,
+.step-2,
+.step-3,
+.step-4,
+.step-5,
+.step-6 {
+  width: calc(100% / 2);
+  padding: 0 40px;
+  margin-bottom: 72px;
+  color: #fff;
+}
+.services-box-2 img {
+  max-height: 60px;
+  max-width: 100%;
+}
+.services-box-2 h3 {
+  margin-top: 25px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2.56px;
+  line-height: 20px;
+}
+.services-box-2 p {
+  margin-top: 15px;
+}
 
 /* ......................... */
 /* ......... FOOTER .........*/
 /* ......................... */
 footer {
   padding: 2.5rem 0;
-  background-color: #303030;
-  color: rgba(255, 255, 255, 0.827);
+  /* background-color: #303030;
+  color: rgba(255, 255, 255, 0.827); */
   text-align: center;
 }
 
@@ -334,11 +402,14 @@ footer {
 /* ......... MEDIA QUERY .........*/
 /* ......................... */
 @media (min-width: 2000px) {
-  .header {
-    height: 50vh;
+  .header .header__text-box {
+    padding: 0 10rem;
+  }
+  .header .heading-primary--main {
+    font-size: 80px;
   }
   .container {
-    max-width: 2000px;
+    max-width: 1800px;
   }
   .about-content {
     padding: 10rem 17rem 0 0;
@@ -347,15 +418,25 @@ footer {
   .about-bg {
     height: 900px;
   }
+  .services-box-1 {
+    width: calc(100% / 2);
+    padding-right: 10rem;
+  }
 }
 @media (min-width: 1200px) {
+  .header {
+    height: 50vh;
+  }
   .heading-primary--main {
-    font-size: 70px;
+    font-size: 68px;
+  }
+  .about-bg {
+    height: 900px;
   }
 }
 @media (max-width: 1200px) {
   .header {
-    height: 60vh;
+    height: 50vh;
   }
   .heading-primary--main {
     padding: 0;
@@ -369,6 +450,20 @@ footer {
   .about-content {
     padding: 5rem 5rem 0 0;
   }
+  .about-bg {
+    height: 900px;
+  }
+  .services-box-1 {
+    width: 100%;
+    padding: 0 2rem;
+    margin-bottom: 5rem;
+  }
+  .services-box-1 img {
+    align-self: center;
+  }
+  .services-box-2 {
+    width: 100%;
+  }
 }
 @media (max-width: 978px) {
   .navigation .nav-container {
@@ -377,15 +472,16 @@ footer {
   .navigation__link {
     margin-left: 20px;
   }
-
   .header {
-    height: 60vh;
+    height: 40vh;
   }
   .heading-primary--main {
     color: rgba(255, 255, 255, 1);
     letter-spacing: 0px;
     font-size: 49px;
-    padding: 0;
+  }
+  .heading-primary--sub {
+    font-size: 15px;
   }
   .card__heading {
     font-size: 20px;
@@ -481,12 +577,36 @@ footer {
   .navigation .menu-icon {
     display: block;
   }
+  .header {
+    height: 40vh;
+  }
+  .header-mobile__text-box {
+    padding: 3rem 1rem;
+    margin: 0 auto;
+  }
+  .header-mobile__text-box .heading-primary--main {
+    font-size: 45px;
+  }
+  .header-mobile__text-box .btn {
+    font-size: 14px;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+  }
+  .card .content {
+    background-color: #fff;
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+    margin-top: -8px;
+  }
 
   .section-design .heading-secondary {
-    font-size: 60px;
+    font-size: 50px;
+  }
+  .card__heading {
+    margin: 0;
   }
   .section-design .main-paragraph {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.5rem 2rem;
   }
 
@@ -495,7 +615,7 @@ footer {
     margin: 1rem 0;
   }
   .card__heading {
-    font-size: 40px;
+    font-size: 35px;
     padding: 1rem 0;
   }
 
@@ -514,11 +634,33 @@ footer {
   .about-bg {
     height: 600px;
   }
+  .services-box {
+    padding-top: 0px;
+  }
+  .services-box-1 {
+    padding: 0px;
+  }
+  .step-1,
+  .step-2,
+  .step-3,
+  .step-4,
+  .step-5,
+  .step-6 {
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 50px;
+  }
+  .step-6 {
+    margin-bottom: 0px;
+  }
 }
 
 @media (max-width: 480px) {
+  .header {
+    height: 30vh;
+  }
   .header-mobile__text-box {
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
   }
   .header-mobile__text-box .heading-primary--main {
     font-size: 44px;
