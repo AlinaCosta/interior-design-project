@@ -27,7 +27,7 @@
   --spacing-xl: 70px;
   --spacing-large: 50px;
   --spacing-medium: 30px;
-  --spacing-small: 15px;
+  --spacing-small: 14px;
 }
 
 * {
@@ -467,10 +467,13 @@ footer {
 }
 @media (max-width: 978px) {
   .navigation .nav-container {
-    padding: 0 var(--spacing-medium);
+    padding: 0 var(--spacing-small);
   }
   .navigation__link {
     margin-left: 20px;
+  }
+  .navigation__logo img {
+    height: 105px;
   }
   .header {
     height: 40vh;
