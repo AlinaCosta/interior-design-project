@@ -421,7 +421,6 @@ a {
   outline: 0.5rem solid #eae5e0;
 }
 
-
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -1003,7 +1002,6 @@ footer {
   }
   .project-name h4 {
     font-size: 1.4rem;
-    /* padding: 0; */
   }
   .contact {
     width: 85%;
