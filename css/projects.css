@@ -1,0 +1,122 @@
+/* .navigation {
+  position: static;
+} */
+.navigation .nav-container {
+  border-bottom: none;
+  border-top: none;
+}
+
+.projects-content {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 5rem 0 2.5rem 0;
+}
+.projects-content h1 {
+  color: rgba(41, 41, 41, 1);
+  font-size: 60px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 400;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  text-transform: capitalize;
+  padding-top: 1rem;
+}
+.projects-content .subheading {
+  color: rgba(137, 123, 116, 1);
+  letter-spacing: 0.11rem;
+  font-size: 13.5px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: 'Questrial';
+  font-weight: 400;
+}
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+  min-width: 350px;
+}
+.projects .projects--card-wrapper {
+  width: calc(100% / 2);
+  position: static;
+}
+.projects .projects--card {
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s;
+  /* position: relative; */
+}
+.project-details {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.6rem;
+}
+.project-details .subheading {
+  font-size: 10px;
+  letter-spacing: 0.11rem;
+}
+.project-details h4 {
+  color: rgba(41, 41, 41, 1);
+  font-size: 37px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 1.1;
+  text-transform: capitalize;
+  padding: 0.7rem 0 1rem 0;
+}
+.projects .projects--card:hover {
+  opacity: 0.8;
+}
+@media (max-width: 978px) {
+  .navigation__link {
+    font-size: 11px;
+    margin-left: 15px;
+  }
+  .projects-content h1 {
+    font-size: 50px;
+    padding-top: 1rem;
+  }
+  .projects-content .subheading {
+    letter-spacing: 0.11rem;
+    font-size: 12px;
+  }
+  .project-details h4 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  /* .navigation {
+    position: fixed;
+  } */
+  .projects-content {
+    text-align: center;
+    margin-top: 5rem;
+    padding: 3.5rem 0 1rem 0;
+  }
+  .projects .projects--card-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .navigation__logo img {
+    width: 13rem;
+  }
+  .projects-content {
+    padding: 3rem 2rem 0 2rem;
+  }
+  .projects-content h1 {
+    font-size: 45px;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    padding-top: 1rem;
+  }
+  .projects-content .subheading {
+    color: rgba(137, 123, 116, 1);
+    letter-spacing: 0.08rem;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}

@@ -32,7 +32,7 @@
     <nav class="navigation">
       <div class="nav-container">
         <a href="index.html" class="navigation__logo">
-          <img src="img/sm.png" alt="Studio McGee logo" />
+          <img src="img/sm-small.png" alt="Studio McGee logo" />
         </a>
         <div class="menu-icon-container">
           <span class="material-icons menu-icon"> menu </span>
@@ -49,6 +49,9 @@
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#section-services">Services</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#section-projects">Projects</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#section-contact">Contact</a>
@@ -91,7 +94,7 @@
           <div class="design-container">
             <div class="card-wrapper">
               <div class="card">
-                <img src="img/hero-img-01.jpg" alt="hero" />
+                <img src="img/design--1.jpg" alt="The McGee Home Entryway" />
                 <div class="content">
                   <h3 class="card__heading">DESIGN TIPS</h3>
                   <a class="btn-design" href="#">CLICK TO LEARN MORE</a>
@@ -100,7 +103,10 @@
             </div>
             <div class="card-wrapper">
               <div class="card">
-                <img src="img/hero-img-02.png" alt="hero" />
+                <img
+                  src="img/design--2.jpg"
+                  alt="Our Favorite Summertime Nap Nooks"
+                />
                 <div class="content">
                   <h3 class="card__heading">ROOM INSPIRATION</h3>
                   <a class="btn-design" href="#">CLICK TO LEARN MORE</a>
@@ -109,7 +115,7 @@
             </div>
             <div class="card-wrapper">
               <div class="card">
-                <img src="img/hero-img-03.jpg" alt="" />
+                <img src="img/design--3.jpg" alt="McGee Home Pantry Details" />
                 <div class="content">
                   <h3 class="card__heading">THE MCGEE HOME</h3>
                   <a class="btn-design" href="#">CLICK TO LEARN MORE</a>
@@ -159,10 +165,7 @@
         <div class="container">
           <div class="services-box">
             <div class="services-box-1">
-              <img
-                src="img/We believe that good design tells a story..jpg"
-                alt="room"
-              />
+              <img src="img/services-image.jpg" alt="room" />
               <span class="subheading">Services</span>
               <h2 class="heading-secondary">
                 We believe that good design tells a story.
@@ -211,10 +214,7 @@
                 </p>
               </div>
               <div class="step-4">
-                <img
-                  src="img/The Studio - Studio McGee.png"
-                  alt="Studio McGee"
-                />
+                <img src="img/icon-mcgee-house.png" alt="Studio McGee" />
                 <h3>EXTERIOR DESIGN</h3>
                 <p>
                   We'll help you choose materials and their placement for your
@@ -253,18 +253,15 @@
                 renovations
               </p> -->
               <div class="btn-box btn-top">
-                <button href="#section-projects" class="btn btn-projects">
+                <a href="pages/projects.html" class="btn btn-projects">
                   Explore All Projects
-                </button>
+                </a>
               </div>
             </div>
             <div class="projects-container">
               <div class="projects--card-wrapper">
                 <div class="projects--card">
-                  <img
-                    src="img/Hilltop Estate.jpg"
-                    alt="Hilltop Estate project"
-                  />
+                  <img src="img/project--2.jpg" alt="Hilltop Estate project" />
                 </div>
                 <div class="project-name">
                   <h4>Hilltop Estate</h4>
@@ -272,10 +269,7 @@
               </div>
               <div class="projects--card-wrapper">
                 <div class="projects--card">
-                  <img
-                    src="img/Home on The Bay.jpg"
-                    alt="Home on The Bay project"
-                  />
+                  <img src="img/project--3.jpg" alt="Home on The Bay project" />
                 </div>
                 <div class="project-name">
                   <h4>Home in The Bay</h4>
@@ -284,12 +278,12 @@
               <div class="projects--card-wrapper">
                 <div class="projects--card">
                   <img
-                    src="img/Arizona Homestead.png"
+                    src="img/project--4.jpg"
                     alt="Arizona Homestead project"
                   />
                 </div>
                 <div class="project-name">
-                  <h4>Arizona Homestead</h4>
+                  <h4>Mountainside Retreat</h4>
                 </div>
               </div>
             </div>
@@ -302,30 +296,94 @@
         </div>
       </section>
       <section id="section-contact" class="section-contact">
-        <div class="bg-video">
-          <video
-            src="/img/sm-projects-video.mp4"
-            type="video/mp4"
-            class="bg-video__content"
-            autoplay
-            muted
-            loop
-          ></video>
-        </div>
-        <div class="contact">
-          <span class="subheading"
-            >WHEN IT COMES TO ANY DESIGN PROJECT, IT'S GOING TO BE
-            OVERWHELMING.</span
-          >
-          <h2 class="heading-secondary">That Is Why We're Here To Help!</h2>
-          <a href="#section-about" class="btn">SEND US AN INQUIRY</a>
+        <div class="contact-container">
+          <div class="bg-video">
+            <video
+              src="/img/sm-projects-video.mp4"
+              type="video/mp4"
+              class="bg-video__content"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+          <div class="contact">
+            <span class="subheading"
+              >WHEN IT COMES TO ANY DESIGN PROJECT, IT'S GOING TO BE
+              OVERWHELMING.</span
+            >
+            <h2 class="heading-secondary">That Is Why We're Here To Help!</h2>
+            <a href="#section-about" class="btn">SEND US AN INQUIRY</a>
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="container">
-        <p>Copyright &copy; 2023 by Alina Costa. All rights reserved.</p>
+      <div class="container grid">
+        <nav class="nav-col">
+          <p class="footer-heading">The Studio</p>
+          <ul class="footer-nav">
+            <li>
+              <a class="footer-link" href="#">INTERIOR DESIGN SERVICES</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">FULL SERVICE INTERIOR DESIGN</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">VIRTUAL INTERIOR DESIGN</a>
+            </li>
+            <li><a class="footer-link" href="#">DESIGN PORTFOLIO</a></li>
+            <li><a class="footer-link" href="#">ABOUT STUDIO MCGEE</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Articles</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">DESIGN TIPS</a></li>
+            <li><a class="footer-link" href="#">STYLING</a></li>
+            <li><a class="footer-link" href="#">ROOM INSPIRATION</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">WATCH</a></li>
+            <li><a class="footer-link" href="#">NETFLIX SHOW</a></li>
+            <li><a class="footer-link" href="#">PRIVACY POLICY</a></li>
+            <li><a class="footer-link" href="#">CONTACT US</a></li>
+          </ul>
+        </nav>
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="logo" src="img/sm-white.png" />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-pinterest"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-youtube"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">&copy;STUDIO MCGEE | Made By Alina</p>
+        </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
