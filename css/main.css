@@ -117,7 +117,7 @@ a {
 /* ......... HEADER .........*/
 /* ......................... */
 .header {
-  /* height: 100vh; */
+  height: 90vh;
   margin-top: 90px;
   background-image: linear-gradient(
       rgba(41, 41, 41, 0.4),
@@ -162,7 +162,7 @@ a {
 }
 .heading-primary--sub {
   color: rgba(255, 255, 255, 1);
-  letter-spacing: 0.2em;
+  letter-spacing: 3.2px;
   font-size: 17px;
   font-family: 'Questrial', sans-serif;
   font-weight: 400;
@@ -172,7 +172,7 @@ a {
 .btn {
   display: inline-block;
   background-color: #eae5e0;
-  letter-spacing: 0.2em;
+  letter-spacing: 3.2px;
   font-size: 12px;
   font-family: 'Questrial', sans-serif;
   font-weight: 400;
@@ -610,7 +610,7 @@ footer {
 /* 1920×1080 (8.89%)
 1366×768 (8.44%) */
 /* 1750 */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .header {
     height: 80vh;
   }
@@ -619,6 +619,18 @@ footer {
   }
   .about-bg {
     height: 900px;
+  }
+} */
+@media (min-width: 1920px) {
+  .header {
+    height: 60vh;
+  }
+  .contact {
+    width: 40%;
+    padding: 5rem 1rem;
+  }
+  .bg-video {
+    height: 40vh;
   }
 }
 @media (max-width: 1200px) {

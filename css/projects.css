@@ -70,6 +70,13 @@
 .projects .projects--card:hover {
   opacity: 0.8;
 }
+@media (min-width: 1920px) {
+  .projects-content {
+    text-align: center;
+    margin-top: 5rem;
+    padding: 8rem 0 4rem 0;
+  }
+}
 @media (max-width: 978px) {
   .navigation__link {
     font-size: 11px;

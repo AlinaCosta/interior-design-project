@@ -1,0 +1,188 @@
+/* .main {
+  height: 100vh;
+} */
+.p_about-header {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p_about-header .heading-secondary {
+  /* padding-top: 1rem; */
+  width: 60%;
+  text-align: center;
+  color: #3f3f3f;
+  font-size: 2.9rem;
+  letter-spacing: 0px;
+  text-transform: none;
+  line-height: 1.1;
+}
+.p_about-header .heading-secondary span {
+  font-style: italic;
+  text-transform: capitalize;
+}
+.p_about-container h3 {
+  text-align: center;
+  color: #737373;
+  font-family: 'Questrial', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 3.11px;
+  background-color: #faf9f7;
+  padding: 2rem;
+  border-top: 1px solid rgba(150, 150, 150, 0.5);
+  border-bottom: 1px solid rgba(150, 150, 150, 0.5);
+}
+.tabs-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+  background-color: #faf9f7;
+  border-bottom: 1px solid rgba(150, 150, 150, 0.5);
+  font-family: 'Questrial', sans-serif;
+  font-weight: 500;
+}
+
+.year a {
+  color: #3f3f3f;
+}
+.year.active {
+  border-bottom: 2px solid #3f3f3f;
+}
+
+.p_about {
+  /* margin-top: 5rem; */
+  padding: 5.25rem 0;
+  background-color: #fff;
+}
+.p_about-photo {
+  height: 70vh;
+  background-image: url(../img/About_Studio_McGee.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+.p_about-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.p_about-text {
+  width: 55%;
+  padding: 1rem 0 0 3rem;
+}
+.p_about-text .heading-secondary {
+  letter-spacing: -1px;
+  padding: 0.8rem 0;
+}
+.p_about-text .btn {
+  margin-top: 2rem;
+}
+.p_about-bg {
+  width: 45%;
+  height: auto;
+  background-image: url(../img/About_tab1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.chevron-right-icon {
+  vertical-align: middle;
+  color: rgba(41, 41, 41, 0.6);
+}
+
+.play-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 63px;
+  height: 63px;
+  background-color: #f8f7f3;
+  border-radius: 100%;
+  /* right: 42px;
+  bottom: 24px; */
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.play-circle {
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  border: 2px solid rgba(41, 41, 41, 0.445);
+  z-index: 10;
+  transition: all 0.3s;
+}
+.play-circle:hover {
+  width: 44px;
+  height: 44px;
+}
+
+.center-it {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.play_arrow-icon {
+  color: rgba(41, 41, 41, 0.6);
+}
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  backdrop-filter: blur(10px);
+  margin: auto;
+}
+.popup__content {
+  position: absolute;
+  left: 54%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup__content {
+  opacity: 1;
+}
+
+.popup__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: rgb(41, 41, 41);
+  transition: all 0.2s;
+}
+.popup__close:hover {
+  font-size: 3.3rem;
+}
+
+@media (max-width: 978px) {
+  .p_about-photo {
+    height: 50vh;
+  }
+  .play-icon {
+    top: 30%;
+  }
+}
