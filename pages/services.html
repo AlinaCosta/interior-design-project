@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio McGee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/services.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="nav-container">
+        <a href="/index.html" class="navigation__logo">
+          <img src="../img/sm-small.png" alt="Studio McGee logo" />
+        </a>
+        <div class="menu-icon-container">
+          <span class="material-icons menu-icon"> menu </span>
+          <input type="checkbox" />
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="/index.html">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="/index.html#section-design"
+                >Design</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="/index.html#section-about"
+                >About</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="/index.html#section-services"
+                >Services</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="/index.html#section-projects"
+                >Projects</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="/index.html#section-contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="p-services">
+      <div class="carousel">
+        <button class="carousel__button carousel__button--left is-hidden">
+          <span class="material-icons arrow-icon"> arrow_back_ios </span>
+        </button>
+        <!-- emmet => li.carousel__slide*3  -->
+        <div class="carousel__tack-container">
+          <ul class="carousel__track">
+            <li class="carousel__slide current-slide">
+              <img
+                class="carousel__image"
+                src="/img/services-img2.jpg"
+                alt="house1"
+              />
+              <div class="carousel__content">
+                <img src="/img/icon-styling-dark.svg" alt="closet" />
+                <h2 class="heading-secondary">Full service interior design</h2>
+                <p class="main-paragraph">
+                  Experience custom design creation with our Full Service
+                  Interior Design. Our experts manage every detail, from space
+                  planning to final installation, providing a personalized and
+                  stress-free design journey.
+                </p>
+              </div>
+            </li>
+            <li class="carousel__slide">
+              <img
+                class="carousel__image"
+                src="/img/services-img1.jpg"
+                alt="house2"
+              />
+              <div class="carousel__content">
+                <img src="/img/icon-pm-dark.svg" alt="computer" />
+                <h2 class="heading-secondary">Virtual interior design</h2>
+                <p class="main-paragraph">
+                  Experience the same custom design creation with the
+                  flexibility of remote communication with our Virtual Interior
+                  Design. Reimagine your space remotely with design plans and
+                  shopping lists from our skilled designers to effortlessly
+                  bring your dream home to life.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button class="carousel__button carousel__button--right">
+          <span class="material-icons arrow-icon"> arrow_forward_ios </span>
+        </button>
+        <div class="carousel__nav">
+          <button class="carousel__indicator current-slide"></button>
+          <button class="carousel__indicator"></button>
+        </div>
+      </div>
+      <!-- <div class="p-services__box">
+        <div class="p-services__bg"></div>
+        <div class="p-services__content">
+          <img src="/img/icon-pm-dark.svg" alt="computer" />
+          <h2 class="heading-secondary">Virtual interior design</h2>
+          <p class="main-paragraph">
+            Experience the same custom design creation with the flexibility of
+            remote communication with our Virtual Interior Design. Reimagine
+            your space remotely with design plans and shopping lists from our
+            skilled designers to effortlessly bring your dream home to life.
+          </p>
+        </div>
+      </div> -->
+      <div class="promises">
+        <h2 class="heading-secondary">Our Promises</h2>
+        <div class="images-container">
+          <figure>
+            <img src="/img/services--1.jpg" alt="DIVERSE INDUSTRY EXPERTISE" />
+            <figcaption class="main-paragraph">
+              DIVERSE INDUSTRY EXPERTISE
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/img/services--2.jpg" alt="DETAIL-ORIENTED PLANNING" />
+            <figcaption class="main-paragraph">
+              DETAIL-ORIENTED PLANNING
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/img/services--3.jpg"
+              alt="TIMELESS & INTENTIONAL DESIGN"
+            />
+            <figcaption class="main-paragraph">
+              TIMELESS & INTENTIONAL DESIGN
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="services-faq">
+        <div class="services-faq__left"></div>
+        <div class="services-faq__right">
+          <h2>F.A.Q</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <h3>
+                  What is the difference between Full Service Interior Design
+                  and Virtual Interior Design?
+                </h3>
+                <button>+</button>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  Full Service Interior Design involves larger scale projects
+                  and include in-person consultations, comprehensive project
+                  management, site visits, furniture procurement, and hands-on
+                  installation. Virtual Interior Design offers a more flexible,
+                  remote approach for one space at a time to create custom
+                  design plans and shopping lists that can be implemented on
+                  your own as time and budget allow.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <h3>How do I know which service is right for me?</h3>
+                <button>+</button>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  To identify what service better suits you and your lifestyle,
+                  there are several key project factors to consider, including
+                  time frame, size and scope, budget, and level of involvement.
+                  Please visit our Virtual Interior Design page and our Full
+                  Service Interior Design page to review the key differences in
+                  more depth and determine the service that best meets your
+                  project needs.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <h3>How much does your design services cost?</h3>
+                <button>+</button>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  We offer both Full Service Interior Design and Virtual
+                  Interior Design, each with its own pricing structure. We
+                  strive to ensure that our pricing remains competitive and
+                  reflective of the value and expertise we bring to each
+                  project. Our Virtual Interior Design is available at a flat
+                  rate, ensuring transparency and simplicity. For instance, our
+                  kitchen design package is typically priced around $4,500,
+                  while a powder bathroom design package is around $2,500. For
+                  Full Service Interior Design, we charge an hourly rate that
+                  varies based on the project's complexity and scope. In
+                  general, Design Services typically account for approximately
+                  10% of your overall budget. Once we receive your project
+                  details, we will provide a more accurate estimate tailored to
+                  your specific needs.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <h3>Can I see examples of your past work?</h3>
+                <button>+</button>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  In a range of styles while all embracing the Studio McGee
+                  aesthetic, our design portfolio showcases our recent projects
+                  and provides endless inspiration.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <h3>How long does a typical design project take?</h3>
+                <button>+</button>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  We move with the pace of the project. Virtual Interior Design
+                  projects typically take three to four months from start to
+                  finish. From there, the timeframe for implementation is up to
+                  you. Full Service Interior Design projects can take anywhere
+                  from two to four years to complete, depending on the level of
+                  detail, the size of the home, and the builder’s timeline.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <h3>Do you work with clients outside of your local area?</h3>
+                <button>+</button>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  Yes! We have worked with clients throughout the United States
+                  and recently completed our first international project in Cabo
+                  San Lucas, Mexico. While our international work is on a
+                  limited basis, we look forward to learning more about the
+                  place that you call home.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <h3>What interior design styles do you specialize in?</h3>
+                <button>+</button>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  We have garnered a reputation for beautifully balanced spaces
+                  that feel both refreshingly modern and endlessly classic. The
+                  signature Studio McGee style is warm, thoughtful, and
+                  inviting. We have designed homes with traditional details and
+                  vintage pieces, and homes with sleek lines and organic
+                  materials, all while weaving our signature style throughout.
+                  Our talented team of design professionals tailor their work to
+                  the needs of each client, taking into account how they'll live
+                  within the space, and whether the home is a new build or a
+                  renovation. We also work to matchmake, aligning each design
+                  team to a client’s unique aesthetic and lifestyle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container grid">
+        <nav class="nav-col">
+          <p class="footer-heading">The Studio</p>
+          <ul class="footer-nav">
+            <li>
+              <a class="footer-link" href="#">INTERIOR DESIGN SERVICES</a>
+            </li>
+            <!-- <li>
+              <a class="footer-link" href="#">FULL SERVICE INTERIOR DESIGN</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">VIRTUAL INTERIOR DESIGN</a>
+            </li> -->
+            <li><a class="footer-link" href="#">DESIGN PORTFOLIO</a></li>
+            <li><a class="footer-link" href="#">ABOUT STUDIO MCGEE</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Articles</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">DESIGN TIPS</a></li>
+            <li><a class="footer-link" href="#">STYLING</a></li>
+            <li><a class="footer-link" href="#">ROOM INSPIRATION</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">WATCH</a></li>
+            <li><a class="footer-link" href="#">NETFLIX SHOW</a></li>
+            <!-- <li><a class="footer-link" href="#">PRIVACY POLICY</a></li> -->
+            <li><a class="footer-link" href="#">CONTACT US</a></li>
+          </ul>
+        </nav>
+        <div class="logo-col">
+          <a href="/index.html" class="footer-logo">
+            <img class="logo" alt="logo" src="../img/sm-white.png" />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-pinterest"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-youtube"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">&copy;STUDIO MCGEE | Made By Alina</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="services.js"></script>
+  </body>
+</html>

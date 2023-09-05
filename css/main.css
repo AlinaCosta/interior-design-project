@@ -75,7 +75,7 @@ a {
   height: 100%;
   padding: 0 var(--spacing-xl);
   border-bottom: var(--border);
-  border-top: var(--border);
+  /* border-top: var(--border); */
   background-color: var(--color-white);
 }
 
@@ -169,7 +169,9 @@ a {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-.btn {
+.btn,
+.btn:link,
+.btn:visited {
   display: inline-block;
   background-color: #eae5e0;
   letter-spacing: 3.2px;
@@ -209,7 +211,6 @@ a {
 
 .section-design {
   padding: 6.25rem 0;
-  /* min-height: 100vh; */
   background-color: #faf9f7;
 }
 /* reusable class ? */
@@ -356,6 +357,7 @@ a {
 .services-box-1 .btn {
   margin-top: 1.5rem;
   background-color: #4b4b4b;
+  color: #fff;
 }
 .services-box-1 .chevron-right-icon {
   color: #fff;
@@ -669,10 +671,11 @@ footer {
     padding: 0 var(--spacing-small);
   }
   .navigation__link {
-    margin-left: 20px;
+    margin-left: 15px;
+    font-size: 12px;
   }
   .navigation__logo img {
-    /* height: 105px; */
+    width: 13rem;
   }
   .header {
     height: 50vh;
@@ -967,6 +970,9 @@ footer {
     font-size: 15px;
     padding: 1rem 2rem;
     margin-bottom: 1rem;
+  }
+  .navigation__logo img {
+    width: 11rem;
   }
   .container {
     padding: 30px;
