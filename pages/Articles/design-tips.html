@@ -25,15 +25,15 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/home.css" />
-    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link rel="stylesheet" href="../../css/article.css" />
   </head>
   <body>
     <nav class="navigation">
       <div class="nav-container">
         <a href="/index.html" class="navigation__logo">
-          <img src="../img/sm-small.png" alt="Studio McGee logo" />
+          <img src="../../img/sm-small.png" alt="Studio McGee logo" />
         </a>
         <div class="menu-icon-container">
           <span class="material-icons menu-icon"> menu </span>
@@ -72,66 +72,67 @@
       </div>
     </nav>
     <main>
-      <header class="projects-header">
-        <div class="projects-content">
-          <span class="subheading"
-            >WE SPECIALIZE IN KITCHEN, BATHROOM & INTERIOR DESIGNS</span
-          >
-          <h1>Past Design Projects</h1>
+      <div class="article-page">
+        <div class="article-page__header">
+          <div class="article-page__details">
+            <span class="subheading">DESIGN TIPS</span>
+            <h2 class="heading-secondary">How to Mix and Match Patterns</h2>
+            <p class="main-paragraph">
+              Shea walks us through incorporating pattern into a room, no matter
+              what look you’re going for.
+            </p>
+          </div>
+          <div class="article-page__image design-tips-image"></div>
         </div>
-      </header>
-      <section class="projects">
-        <div class="container projects-grid">
-          <div class="projects--card-wrapper">
-            <a href="./Projects/studio-mcGee-spec-home.html">
-              <img
-                src="../img/project--1.jpg"
-                alt="Studio McGee Spec Home"
-                class="projects-list__image"
-            /></a>
-            <div class="project-details">
-              <span class="subheading">March 2023</span>
-              <h4>Studio McGee Spec Home</h4>
+        <div class="article-page__content">
+          <div class="article-page__box-1"></div>
+          <div class="article-page__box-2">
+            <div class="article-page__details small-viewport">
+              <span class="subheading">DESIGN TIPS</span>
+              <h2 class="heading-secondary">How to Mix and Match Patterns</h2>
+              <p class="main-paragraph">
+                Shea walks us through incorporating pattern into a room, no
+                matter what look you’re going for.
+              </p>
             </div>
-          </div>
-          <div class="projects--card-wrapper">
-            <a href="./Projects/hilltop-project.html">
-              <img
-                src="../img/project--2.jpg"
-                alt="Hilltop Estate"
-                class="projects-list__image"
-            /></a>
-            <div class="project-details">
-              <span class="subheading">May 2022</span>
-              <h4>Hilltop Estate</h4>
-            </div>
-          </div>
-          <div class="projects--card-wrapper">
-            <a href="./Projects/home-in-the-bay.html">
-              <img
-                src="../img/project--3.jpg"
-                alt="Home on The Bay"
-                class="projects-list__image"
-            /></a>
-            <div class="project-details">
-              <span class="subheading">May 2021</span>
-              <h4>Home on The Bay</h4>
-            </div>
-          </div>
-          <div class="projects--card-wrapper">
-            <a href="./Projects/mountainside-retreat.html">
-              <img
-                src="../img/project--4.jpg"
-                alt="Mountainside Retreat"
-                class="projects-list__image"
-            /></a>
-            <div class="project-details">
-              <span class="subheading">December 2020</span>
-              <h4>Mountainside Retreat</h4>
+            <p class="main-paragraph">
+              We’re currently heading into a more traditional place with design,
+              meaning we’ll see more pattern play, pattern on pattern, and
+              intricate motifs. From the textures of natural, living materials
+              to printed fabrics, pattern brings movement and expression to any
+              space.
+            </p>
+            <p class="main-paragraph">
+              When thinking about how to incorporate patterns into your space,
+              it’s important to consider the entire room as a whole. Inside the
+              room, you have a floor, walls, a ceiling, and all the items within
+              them. Do you have an intricate tile motif in your bathroom? How
+              will that pair with the wallpaper or texture of your shower
+              curtain? In a living room or bedroom, consider all of the textiles
+              involved, the material of the furniture, and the wallpaper or wall
+              decor. How this pattern will interact with the other elements of
+              the room is the most important question to ask yourself.
+            </p>
+            <p class="main-paragraph">
+              While mixing multiple patterns in one space can seem intimidating,
+              understanding the basics of how a variety of shapes and scales and
+              color palettes work together simplifies the process. Here, a few
+              tips and tricks to mixing patterns in design.
+            </p>
+            <div class="article-page__images">
+              <div class="article-page__image-1">
+                <img src="../../img/design-tips-1.jpg" alt="design" />
+              </div>
+              <div class="article-page__image-2">
+                <img src="../../img/design-tips-2.jpg" alt="design" />
+              </div>
+              <div class="article-page__image-3">
+                <img src="../../img/design-tips-3.jpg" alt="design" />
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer>
       <div class="container grid">
@@ -170,7 +171,7 @@
         </nav>
         <div class="logo-col">
           <a href="#" class="footer-logo">
-            <img class="logo" alt="logo" src="../img/sm-white.png" />
+            <img class="logo" alt="logo" src="../../img/sm-white.png" />
           </a>
 
           <ul class="social-links">
@@ -200,5 +201,6 @@
       </div>
     </footer>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="design-tips.js"></script>
   </body>
 </html>

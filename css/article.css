@@ -1,0 +1,139 @@
+/* .navigation {
+  position: static;
+} */
+.article-page {
+  position: relative;
+  background-color: #fff;
+}
+.article-page__header {
+  display: flex;
+  height: 800px;
+}
+.article-page__details {
+  width: 500px;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* background-color: #f8f7f3; */
+  background-color: #ecebe1;
+  opacity: 0.9;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article-page__details > * {
+  color: rgb(41, 41, 41);
+  font-weight: 400;
+}
+.article-page__details .heading-secondary {
+  font-size: 45px;
+  padding: 0.5rem 0;
+}
+
+.article-page__details .main-paragraph {
+  font-family: 'Questrial';
+}
+.article-page__image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.design-tips-image {
+  background-image: url(/img/design-tips.jpg);
+  /* transform: scaleX(-1);
+  background-position: right; */
+  background-position: left;
+}
+.room-inspiration-image {
+  background-image: url(/img/room-inspiration.jpg);
+}
+.mcgee-home-image {
+  background-image: url(/img/mcgee-home.jpg);
+}
+.article-page__content {
+  display: flex;
+}
+.article-page__box-1 {
+  width: 40%;
+}
+.article-page__box-2 {
+  width: 60%;
+  padding: 4rem 8rem 3rem 0rem;
+  max-width: 1400px;
+}
+.article-page__details.small-viewport {
+  display: none;
+}
+.article-page__images {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+.article-page__images > * {
+  width: 50%;
+  padding: 0.5rem;
+}
+.article-page__images img {
+  width: 100%;
+}
+.article-page__image-3 {
+  flex-grow: 1;
+}
+@media (max-width: 978px) {
+  .article-page__header {
+    height: 700px;
+  }
+  .design-tips-image {
+    background-position: center;
+  }
+  .article-page__details {
+    width: 300px;
+    height: 700px;
+    padding: 0 2rem;
+  }
+  .article-page__details .heading-secondary {
+    font-size: 35px;
+  }
+  .article-page__box-1 {
+    width: 0;
+  }
+  .article-page__box-2 {
+    width: 100%;
+    padding: 4rem 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .article-page__header {
+    height: 500px;
+  }
+  .article-page__details {
+    display: none;
+  }
+  .article-page__box-2 {
+    position: relative;
+    padding: 4rem 4rem;
+  }
+  .article-page__details.small-viewport {
+    display: block;
+    position: static;
+    height: auto;
+    width: 100%;
+    padding: 2rem;
+    margin-top: -6rem;
+    margin-bottom: 3rem;
+    opacity: 1;
+  }
+}
+@media (max-width: 568px) {
+  .article-page__header {
+    height: 400px;
+  }
+  .article-page__box-2 {
+    padding: 4rem 2rem;
+  }
+}

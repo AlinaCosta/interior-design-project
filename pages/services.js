@@ -2,7 +2,7 @@
 // ACCORDION
 //////////////////////////////////////////////////////
 const accordionItems = document.querySelectorAll('.accordion-item');
-
+const btn = document.querySelectorAll('.plus-btn');
 accordionItems.forEach((accordion) => {
   accordion.addEventListener('click', () => {
     let accordionBtn = accordion.querySelector('button');
@@ -11,6 +11,11 @@ accordionItems.forEach((accordion) => {
       accordionBtn.textContent = '-';
     } else {
       accordionBtn.textContent = '+';
+    }
+    if (accordionBtn.textContent === '-') {
+      accordionBtn.style.paddingRight = '3px';
+    } else {
+      accordionBtn.style.padding = '0px';
     }
   });
 });
