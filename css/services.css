@@ -4,7 +4,6 @@
 .p-services {
   background-color: #fff;
 }
-
 .carousel {
   position: relative;
   height: 80vh;
@@ -43,13 +42,11 @@
 .carousel__content .main-paragraph {
   text-align: center;
 }
-
 .carousel__content img {
   display: block;
   height: 75px;
   width: 100%;
 }
-
 .carousel__tack-container {
   height: 100%;
   position: relative;
@@ -62,7 +59,6 @@
   position: relative;
   transition: transform 1s ease;
 }
-
 .carousel__button {
   position: absolute;
   top: 50%;
@@ -102,7 +98,6 @@
 .is-hidden {
   display: none;
 }
-
 .promises {
   margin-top: 4rem;
   padding: 5rem 0;
@@ -200,7 +195,6 @@
   .carousel__content {
     padding: 0 1rem;
   }
-
   .carousel__content .heading-secondary {
     font-size: 1.8rem;
   }

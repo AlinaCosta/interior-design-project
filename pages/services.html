@@ -31,44 +31,72 @@
   </head>
   <body>
     <nav class="navigation">
-      <div class="nav-container">
-        <a href="/index.html" class="navigation__logo">
-          <img src="../img/sm-small.png" alt="Studio McGee logo" />
-        </a>
-        <div class="menu-icon-container">
-          <span class="material-icons menu-icon"> menu </span>
-          <input type="checkbox" />
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="/index.html">Home</a>
+      <a href="/index.html" class="navigation__logo">
+        <img src="../img/sm-small.png" alt="Studio McGee logo" />
+      </a>
+      <ul class="navigation__menu">
+        <li class="navigation__item">
+          <a class="navigation__link" href="/index.html">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="/index.html#section-about">About</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="/index.html#section-services"
+            >Services</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="/index.html#section-projects"
+            >Projects</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="/index.html#section-contact"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <ul class="social-links">
+            <li>
+              <a
+                class="social-link social-link--dark"
+                target="_blank"
+                href="https://www.instagram.com/studiomcgee/"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="/index.html#section-design"
-                >Design</a
-              >
+            <li>
+              <a
+                class="social-link social-link--dark"
+                target="_blank"
+                href="https://www.facebook.com/StudioMcGee/"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="/index.html#section-about"
-                >About</a
-              >
+            <li>
+              <a
+                class="social-link social-link--dark"
+                target="_blank"
+                href="https://ro.pinterest.com/studio_mcgee/"
+                ><ion-icon class="social-icon" name="logo-pinterest"></ion-icon
+              ></a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="/index.html#section-services"
-                >Services</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="/index.html#section-projects"
-                >Projects</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="/index.html#section-contact"
-                >Contact</a
-              >
+            <li>
+              <a
+                class="social-link social-link--dark"
+                target="_blank"
+                href="https://www.youtube.com/channel/UCXvzpK4eKUJysEZ42zjTUdw"
+                ><ion-icon class="social-icon" name="logo-youtube"></ion-icon
+              ></a>
             </li>
           </ul>
-        </div>
+        </li>
+      </ul>
+      <div class="menu-icon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
     </nav>
     <main class="p-services">
@@ -365,6 +393,7 @@
       </div>
     </footer>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="/home.js"></script>
     <script src="services.js"></script>
   </body>
 </html>

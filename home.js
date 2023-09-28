@@ -1,3 +1,22 @@
+// NAVIGATION
+const menuIcon = document.querySelector('.menu-icon');
+const navMenu = document.querySelector('.navigation__menu');
+const links = navMenu.querySelectorAll('li');
+
+menuIcon.addEventListener('click', () => {
+  navMenu.classList.toggle('nav-active');
+  menuIcon.classList.toggle('close-icon');
+});
+links.forEach((link) => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('nav-active');
+    menuIcon.classList.toggle('close-icon');
+  });
+});
+
+menuIcon();
+
+// CONTACT
 const nameInput = document.querySelector('#name');
 const nameError = document.querySelector('.name-error');
 const emailInput = document.querySelector('#email');

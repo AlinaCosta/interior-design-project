@@ -30,15 +30,17 @@
   --spacing-small: 14px;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-
 body {
   font-family: var(--font-roboto);
   color: var(--text-primary);
@@ -47,70 +49,164 @@ body {
   font-size: var(--fs-medium);
   line-height: 26px;
 }
-
 ul {
   list-style-type: none;
 }
-
 a {
   display: block;
   text-decoration: none;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 2rem;
+}
+.social-link {
+  font-size: 13px;
+  transition: all 0.3s;
+}
+.social-link--light {
+  color: #ccc;
+}
+.social-link--light:hover {
+  color: #fff;
+}
+.social-link--dark {
+  color: rgba(137, 123, 116, 1);
+}
+.social-link--dark:hover {
+  color: rgba(137, 123, 116, 0.582);
+}
+.social-icon {
+  font-size: 1.5rem;
 }
 
 /* ......................... */
 /* ....... NAVIGATION .......*/
 /* ......................... */
 .navigation {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 9999;
-  height: 100px;
-}
-
-.navigation .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  height: 90px;
   padding: 0 var(--spacing-xl);
-  border-bottom: var(--border);
-  /* border-top: var(--border); */
+  position: fixed;
+  top: 0;
+  z-index: 9999;
   background-color: var(--color-white);
+  width: 100%;
+  border-bottom: var(--border);
 }
-
-.navigation__logo img {
-  width: 15rem;
-  height: auto;
-  vertical-align: middle;
-}
-
-.navigation .menu-icon {
-  color: var(--color-dark);
-  display: none;
-}
-
-.navigation input[type='checkbox'] {
-  display: none;
-}
-
-.navigation__list {
+.navigation__logo {
+  width: 14rem;
+  min-width: 11rem;
   display: flex;
+  margin-right: 1rem;
 }
-
+.navigation__logo img {
+  width: 100%;
+}
+.navigation__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .navigation__link {
-  /* padding: var(--spacing-small); */
   font-size: 13px;
-  letter-spacing: 2.5px;
+  letter-spacing: 2.4px;
   color: rgb(41, 41, 41);
   font-family: 'Questrial', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  margin-left: 30px;
+  margin-left: 2rem;
 }
 .navigation__link:hover {
   color: rgba(137, 123, 116, 1);
   text-decoration: underline;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+.menu-icon div {
+  width: 23px;
+  height: 2.5px;
+  background-color: rgba(41, 41, 41, 0.8);
+  margin: 3px;
+  transition: all 0.2s ease;
+}
+.close-icon .line1 {
+  transform: rotate(-45deg) translate(-2px, 6px);
+}
+.close-icon .line2 {
+  opacity: 0;
+}
+.close-icon .line3 {
+  transform: rotate(45deg) translate(-2px, -6px);
+}
+.navigation__menu .social-links {
+  display: none;
+}
+
+@media (max-width: 978px) {
+  .navigation {
+    padding: 0 var(--spacing-medium);
+  }
+
+  .navigation__link {
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    color: rgb(41, 41, 41);
+    font-family: 'Questrial', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .navigation {
+    transition: transform 0.5s ease-in;
+  }
+  .navigation__menu {
+    position: absolute;
+    right: 0;
+    top: 90px;
+    z-index: 4;
+    /* height: calc(100vh - 90px); */
+    height: 100vh;
+    width: 70%;
+    background-color: var(--bg-light);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* is going to move it off the screen */
+    transform: translateX(100%);
+    padding: 5rem 0;
+  }
+  .navigation__item {
+    margin-bottom: 1rem;
+  }
+  .navigation__link {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .navigation__menu.nav-active {
+    transform: translateX(0%);
+    transition: transform 0.3s ease-out;
+  }
+  .navigation__menu .social-links {
+    display: flex;
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 480px) {
+  .navigation__menu .social-links {
+    gap: 1rem;
+  }
 }
 
 /* ......................... */
@@ -498,7 +594,7 @@ a {
 }
 
 .contact-form {
-  max-width: 40%;
+  max-width: 650px;
   margin: 0 auto;
   padding: 5rem 0;
   text-align: center;
@@ -596,15 +692,6 @@ footer {
 .footer-logo .logo {
   width: 15rem;
 }
-.social-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.social-icon {
-  font-size: 1.5rem;
-}
 
 .copyright {
   font-size: 14px;
@@ -641,20 +728,6 @@ footer {
 /* ......... MEDIA QUERY .........*/
 /* ......................... */
 
-/* 1920×1080 (8.89%)
-1366×768 (8.44%) */
-/* 1750 */
-/* @media (min-width: 1200px) {
-  .header {
-    height: 80vh;
-  }
-  .heading-primary--main {
-    font-size: 68px;
-  }
-  .about-bg {
-    height: 900px;
-  }
-} */
 @media (min-width: 1920px) {
   .header {
     height: 60vh;
@@ -702,16 +775,6 @@ footer {
   }
 }
 @media (max-width: 978px) {
-  .navigation .nav-container {
-    padding: 0 var(--spacing-small);
-  }
-  .navigation__link {
-    margin-left: 15px;
-    font-size: 12px;
-  }
-  .navigation__logo img {
-    width: 13rem;
-  }
   .header {
     height: 50vh;
   }
@@ -780,9 +843,6 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  .navigation .nav-container {
-    padding: 0 var(--spacing-medium);
-  }
   .header {
     height: 50vh;
     background-image: linear-gradient(
@@ -816,41 +876,7 @@ footer {
     padding: 1rem 3rem;
     margin-bottom: 2rem;
   }
-  .navigation .navigation__list {
-    display: none;
-  }
-  .navigation__item:hover .navigation__link::after {
-    display: none;
-  }
 
-  .navigation input[type='checkbox'] {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    margin: 0;
-    cursor: pointer;
-  }
-
-  .navigation input[type='checkbox']:checked ~ .navigation__list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-    padding: var(--spacing-medium) 0;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    top: 100px;
-    left: 0;
-    background-color: var(--bg-light);
-    z-index: 2;
-  }
-  .navigation .menu-icon {
-    display: block;
-  }
   .header {
     height: 40vh;
   }
@@ -1022,9 +1048,7 @@ footer {
     padding: 1rem 2rem;
     margin-bottom: 1rem;
   }
-  .navigation__logo img {
-    width: 11rem;
-  }
+
   .container {
     padding: 30px;
   }

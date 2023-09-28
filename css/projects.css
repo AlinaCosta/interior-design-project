@@ -1,8 +1,3 @@
-.navigation .nav-container {
-  border-bottom: none;
-  border-top: none;
-}
-
 .projects-content {
   text-align: center;
   margin-top: 5rem;
@@ -75,10 +70,6 @@
   }
 }
 @media (max-width: 978px) {
-  .navigation__link {
-    font-size: 11px;
-    margin-left: 15px;
-  }
   .projects-content h1 {
     font-size: 50px;
     padding-top: 1rem;
@@ -102,9 +93,6 @@
   }
 }
 @media (max-width: 480px) {
-  .navigation__logo img {
-    width: 13rem;
-  }
   .projects-content {
     padding: 3rem 2rem 0 2rem;
   }
