@@ -4,23 +4,19 @@
   padding: 5rem 0 2.5rem 0;
 }
 .projects-content h1 {
-  color: rgba(41, 41, 41, 1);
+  color: var(--color-dark);
   font-size: 60px;
-  font-family: 'Nanum Myeongjo', serif;
-  font-weight: 400;
   letter-spacing: -2px;
   line-height: 1.1;
   text-transform: capitalize;
   padding-top: 1rem;
 }
 .projects-content .subheading {
-  color: rgba(137, 123, 116, 1);
+  color: var(--color-primary);
   letter-spacing: 0.11rem;
   font-size: 13.5px;
   line-height: 1.8;
   text-transform: uppercase;
-  font-family: 'Questrial';
-  font-weight: 400;
 }
 .projects-grid {
   display: flex;
@@ -36,8 +32,8 @@
   width: 100%;
   cursor: pointer;
   transition: all 0.3s;
-  border: 0.7rem solid #fff;
-  outline: 0.9px solid rgb(234, 229, 224);
+  border: 0.7rem solid var(--color-white);
+  outline: 0.9px solid var(--color-light);
 }
 
 .project-details {
@@ -50,10 +46,8 @@
   letter-spacing: 0.11rem;
 }
 .project-details h4 {
-  color: rgba(41, 41, 41, 1);
+  color: var(--color-dark);
   font-size: 37px;
-  font-family: 'Nanum Myeongjo', serif;
-  font-weight: 400;
   letter-spacing: 0px;
   line-height: 1.1;
   text-transform: capitalize;
@@ -103,7 +97,7 @@
     padding-top: 1rem;
   }
   .projects-content .subheading {
-    color: rgba(137, 123, 116, 1);
+    color: var(--color-primary);
     letter-spacing: 0.08rem;
     font-size: 12px;
     line-height: 1.4;

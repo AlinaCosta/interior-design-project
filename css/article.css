@@ -1,6 +1,9 @@
+/* .navigation {
+  position: static;
+} */
 .article-page {
   position: relative;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 .article-page__header {
   display: flex;
@@ -13,8 +16,8 @@
   top: 0;
   left: 0;
   z-index: 1;
-  /* background-color: #f8f7f3; */
-  background-color: #ecebe1;
+  background-color: var(--bg-light-3);
+  /* background-color: #ecebe1; */
   opacity: 0.9;
   padding: 0 4rem;
   display: flex;
@@ -23,17 +26,13 @@
 }
 
 .article-page__details > * {
-  color: rgb(41, 41, 41);
-  font-weight: 400;
+  color: var(--color-dark);
 }
 .article-page__details .heading-secondary {
   font-size: 45px;
   padding: 0.5rem 0;
 }
 
-.article-page__details .main-paragraph {
-  font-family: 'Questrial';
-}
 .article-page__image {
   background-position: center;
   background-repeat: no-repeat;
@@ -42,8 +41,6 @@
 }
 .design-tips-image {
   background-image: url(/img/design-tips.jpg);
-  /* transform: scaleX(-1);
-  background-position: right; */
   background-position: left;
 }
 .room-inspiration-image {

@@ -3,7 +3,7 @@
 }
 .p_about {
   padding-bottom: 5.25rem;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 .p_about-photo {
   height: 70vh;
@@ -20,7 +20,7 @@
   transform: translate(-50%, -50%);
   width: 63px;
   height: 63px;
-  background-color: #f8f7f3;
+  background-color: var(--bg-light);
   border-radius: 100%;
   cursor: pointer;
   transition: all 0.3s;
@@ -29,7 +29,7 @@
   border-radius: 100%;
   width: 42px;
   height: 42px;
-  border: 2px solid rgba(41, 41, 41, 0.445);
+  border: 2px solid var(--color-gray);
   z-index: 10;
   transition: all 0.3s;
 }
@@ -45,7 +45,7 @@
   transform: translate(-50%, -50%);
 }
 .play_arrow-icon {
-  color: rgba(41, 41, 41, 0.6);
+  color: var(--color-gray);
 }
 
 .popup {
@@ -58,7 +58,7 @@
   transition: all 0.3s;
   opacity: 0;
   visibility: hidden;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 }
 .popup__content {
   position: absolute;
@@ -85,7 +85,7 @@
   top: 5%;
   right: 3%;
   font-size: 3rem;
-  color: rgb(41, 41, 41);
+  color: var(--color-dark);
   transition: all 0.2s;
 }
 .popup__close:hover {
@@ -101,7 +101,7 @@
   padding-top: 1rem;
   width: 60%;
   text-align: center;
-  color: #3f3f3f;
+  color: var(--color-dark-2);
   font-size: 2.9rem;
   letter-spacing: 0px;
   text-transform: none;
@@ -113,31 +113,26 @@
 }
 .p_about-container h3 {
   text-align: center;
-  color: #737373;
-  font-family: 'Questrial', sans-serif;
-  font-weight: 400;
   font-size: 17px;
   letter-spacing: 3.11px;
-  background-color: #faf9f7;
+  background-color: var(--bg-light);
   padding: 2rem;
-  border-top: 1px solid rgba(150, 150, 150, 0.5);
-  border-bottom: 1px solid rgba(150, 150, 150, 0.5);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 .tabs-list {
   display: flex;
   justify-content: space-around;
   padding: 1.5rem 0;
-  background-color: #faf9f7;
-  border-bottom: 1px solid rgba(150, 150, 150, 0.5);
-  font-family: 'Questrial', sans-serif;
-  font-weight: 500;
+  background-color: var(--bg-light);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .year a {
-  color: #3f3f3f;
+  color: var(--color-dark-2);
 }
 .year a.active {
-  border-bottom: 2px solid #3f3f3f;
+  border-bottom: 2px solid var(--color-gray);
 }
 
 .tab-content.hidden {
@@ -184,10 +179,7 @@
 .p_about-img--5 {
   background-image: url(../img/About_tab5.jpg);
 }
-.chevron-right-icon {
-  vertical-align: middle;
-  color: rgba(41, 41, 41, 0.6);
-}
+
 @media (max-width: 1200px) {
   .popup-video {
     width: 40rem;
@@ -201,8 +193,6 @@
   }
   .p_about-box {
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
   }
   .p_about-text {
     width: 100%;

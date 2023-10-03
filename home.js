@@ -14,15 +14,11 @@ links.forEach((link) => {
   });
 });
 
-menuIcon();
-
 // CONTACT
 const nameInput = document.querySelector('#name');
 const nameError = document.querySelector('.name-error');
 const emailInput = document.querySelector('#email');
 const emailError = document.querySelector('.email-error');
-const message = document.querySelector('#message');
-const messageError = document.querySelector('.message-error');
 const form = document.querySelector('form');
 const formResult = document.querySelector('.form-result');
 const formError = document.querySelector('.submit-error');
@@ -31,8 +27,6 @@ nameInput.addEventListener('change', function (event) {
   const value = event.target.value;
   if (value.length < 3) {
     nameError.innerHTML = 'Name must contain at least 3 characters';
-    // } else if (!value.match(/^[A-Za-z]*\s{1}[A-Za-z]*&/)) {
-    //   nameError.innerHTML = 'Write full name';
   } else {
     nameError.innerHTML = '';
   }
@@ -55,15 +49,27 @@ form.addEventListener('submit', function (event) {
   const nameValue = nameInput.value;
   const emailValue = emailInput.value;
 
-  if (nameValue !== '' && emailValue !== '') {
-    formResult.classList.add('success');
-    formResult.innerHTML = `
-      Thank you <strong>${nameValue}</strong> for reaching out! We've received your response and will be in touch if there's a fitting opportunity.
-    `;
-  } else {
+  const nameIsValid = nameValue.length >= 3;
+  const emailIsValid = emailValue.match(
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+  );
+  if (nameValue === '') {
     nameError.innerHTML = 'This field is required.';
-    emailError.innerHTML = 'This field is required.';
-    formError.innerHTML = 'There was a problem with your submission.';
   }
-  form.reset();
+  if (emailValue === '') {
+    emailError.innerHTML = 'This field is required.';
+  }
+  if (!nameIsValid || !emailIsValid) {
+    formError.innerHTML = 'There was a problem with your submission.';
+  } else {
+    formError.innerHTML = '';
+    formResult.classList.add('success');
+    formResult.innerHTML = `Thank you <strong>${nameValue}</strong> for reaching out! We've received your response and will be in touch if there's a fitting opportunity.`;
+    form.reset();
+  }
+});
+
+form.addEventListener('input', function () {
+  formResult.classList.remove('success');
+  formResult.innerHTML = ``;
 });

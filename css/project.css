@@ -2,7 +2,7 @@
   position: static;
 }
 .gallery {
-  background-color: #faf9f7;
+  background-color: var(--bg-light);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(11, 10vw);
@@ -72,22 +72,21 @@
 }
 
 .project-details {
-  background-color: #eae5e0;
-  color: rgb(41, 41, 41);
+  background-color: var(--color-light);
+  color: var(--color-dark);
   position: sticky;
   bottom: 0;
   padding: 2rem 4rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* border-top: 3px solid #c2beba; */
-  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+  box-shadow: rgb(48, 48, 48) 0px 5px 20px;
 }
 .project-details .details-box {
   flex: 1;
 }
 .project-details .heading-secondary {
-  color: rgb(41, 41, 41);
+  color: var(--color-dark);
   font-size: 45px;
 }
 .project-details .subheading {
@@ -95,17 +94,17 @@
   margin-top: 0.7rem;
 }
 .project-details .btn.yt-btn {
-  background-color: rgba(211, 206, 202, 0.6);
+  background-color: var(--bg-light-2);
 }
 .project-details .btn.gb-btn {
-  color: rgba(137, 123, 116, 1);
+  color: var(--color-primary);
 }
 .project-details .btn.yt-btn:hover {
-  background-color: rgba(211, 206, 202, 0.8);
+  background-color: var(--bg-light-3);
 }
 .project-details .btn.gb-btn:hover {
-  background-color: #eae5e0;
-  color: rgb(41, 41, 41);
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 .youtube-icon {
   vertical-align: middle;
@@ -118,7 +117,6 @@
     padding: 2rem 2rem;
   }
   .project-details .btn.gb-btn {
-    
     padding-right: 0;
   }
 }
