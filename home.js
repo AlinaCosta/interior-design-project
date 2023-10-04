@@ -66,10 +66,10 @@ form.addEventListener('submit', function (event) {
     formResult.classList.add('success');
     formResult.innerHTML = `Thank you <strong>${nameValue}</strong> for reaching out! We've received your response and will be in touch if there's a fitting opportunity.`;
     form.reset();
-  }
-});
 
-form.addEventListener('input', function () {
-  formResult.classList.remove('success');
-  formResult.innerHTML = '';
+    setTimeout(function () {
+      formResult.classList.remove('success');
+      formResult.innerHTML = ``;
+    }, 3000);
+  }
 });

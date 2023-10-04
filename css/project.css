@@ -4,6 +4,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(11, 10vw);
   gap: 1rem;
+  margin-top: 90px;
   padding: 1rem;
   padding-bottom: 0;
 }
@@ -147,6 +148,13 @@
 }
 
 @media (max-width: 568px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, 20vw);
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
   .project-details .heading-secondary {
     font-size: 1.8rem;
   }
