@@ -71,5 +71,5 @@ form.addEventListener('submit', function (event) {
 
 form.addEventListener('input', function () {
   formResult.classList.remove('success');
-  formResult.innerHTML = ``;
+  formResult.innerHTML = '';
 });

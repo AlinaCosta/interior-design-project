@@ -1,6 +1,3 @@
-.navigation {
-  position: static;
-}
 .gallery {
   background-color: var(--bg-light);
   display: grid;
@@ -76,34 +73,41 @@
   color: var(--color-dark);
   position: sticky;
   bottom: 0;
-  padding: 2rem 4rem;
+  padding: 1.5rem 4rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   box-shadow: rgb(48, 48, 48) 0px 5px 20px;
 }
-.project-details .details-box {
+.project-details .details-box-1 {
   flex: 1;
+}
+.project-details .details-box-2 {
+  display: flex;
 }
 .project-details .heading-secondary {
   color: var(--color-dark);
-  font-size: 45px;
+  font-size: 2.2rem;
 }
 .project-details .subheading {
-  letter-spacing: 0.15rem;
-  margin-top: 0.7rem;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+}
+.project-details .btn {
+  padding: 1rem 2rem;
 }
 .project-details .btn.yt-btn {
   background-color: var(--bg-light-2);
 }
-.project-details .btn.gb-btn {
-  color: var(--color-primary);
-}
 .project-details .btn.yt-btn:hover {
   background-color: var(--bg-light-3);
 }
+.project-details .btn.gb-btn {
+  color: var(--color-primary);
+  margin-left: 5px;
+}
 .project-details .btn.gb-btn:hover {
-  background-color: var(--color-light);
+  background-color: var(--bg-light-2);
   color: var(--color-dark);
 }
 .youtube-icon {
@@ -114,43 +118,54 @@
 }
 @media (max-width: 1200px) {
   .project-details {
-    padding: 2rem 2rem;
+    padding: 1.5rem 2rem;
   }
   .project-details .btn.gb-btn {
     padding-right: 0;
   }
+  .project-details .btn.gb-btn:hover {
+    background-color: transparent;
+  }
 }
 @media (max-width: 978px) {
-  .project-details {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  .project-details .btn {
+    padding: 1rem 1.5rem;
+    font-size: 11px;
   }
-  .project-details .details-box{
+}
+@media (max-width: 768px) {
+  .project-details .btn.gb-btn {
+    padding-right: 1rem;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  .project-details .details-box-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1.2rem;
-    text-align: center;
+  }
 }
 
 @media (max-width: 568px) {
   .project-details .heading-secondary {
-    font-size: 40px;
+    font-size: 1.8rem;
+  }
+  .project-details .subheading {
+    letter-spacing: 0.7px;
+    margin-top: 10px;
+  }
+  .project-details .btn {
+    padding: 0.7rem 1rem;
   }
 }
 @media (max-width: 480px) {
-  .project-details .btn.yt-btn {
-    font-size: 10px;
-    letter-spacing: 2.2px;
-    padding: 1rem 1rem;
+  .project-details {
+    padding: 1.5rem 1rem;
+    flex-direction: column;
     text-align: center;
+    gap: 1.5rem;
   }
-  .project-details .btn.gb-btn {
+  .project-details .btn {
     font-size: 10px;
-    letter-spacing: 2px;
-    padding: 0;
-    text-align: center;
   }
 }
