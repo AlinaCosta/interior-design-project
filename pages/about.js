@@ -14,7 +14,6 @@ tabsButtons.forEach((tab, index) => {
 
 tabsContainer.addEventListener('click', (e) => {
   const clickedTab = e.target.closest('a');
-  // clickedTab.classList.add('active');
   if (!clickedTab) return;
   e.preventDefault();
 
@@ -22,19 +21,17 @@ tabsContainer.addEventListener('click', (e) => {
 });
 
 function switchTab(newTab) {
-  // newTab.classList.add('active');
   const activePanelId = newTab.getAttribute('href');
   const activePanel = tabsContainer.querySelector(activePanelId);
 
   tabsButtons.forEach((button, index) => {
     button.classList.remove('active');
-    button[index] = -1;
+    // button[index] = 0;
   });
 
   tabPanels.forEach((panel) => {
     panel.classList.add('hidden');
   });
-
   activePanel.classList.remove('hidden');
   newTab.classList.add('active');
 }

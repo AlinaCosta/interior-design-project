@@ -221,7 +221,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
 }
 .footer__nav > *:not(:last-child) {
   padding-bottom: 1.5rem;
@@ -319,13 +319,25 @@ footer {
   .footer-links {
     flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
   }
 }
 @media (max-width: 480px) {
+  .heading-secondary {
+    font-size: 35px;
+  }
   .navigation__menu .social-links {
     gap: 1rem;
   }
   .container {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+  }
+  /* Button */
+  .btn,
+  .btn:link,
+  .btn:visited {
+    letter-spacing: 3px;
+    font-size: 0.6rem;
+    padding: 1rem 2rem;
   }
 }

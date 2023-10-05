@@ -21,7 +21,6 @@
 }
 .heading-primary--main {
   color: var(--color-white);
-  /* letter-spacing: 0px; */
   font-size: 80px;
   text-transform: capitalize;
   line-height: 1.2;
@@ -191,16 +190,16 @@
   max-height: 60px;
   max-width: 100%;
 }
-.services-box-2 h3 {
+.services-box-2 h4 {
   margin-top: 25px;
-  font-size: 16px;
-  letter-spacing: 2.56px;
-  line-height: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.6;
 }
 .services-box-2 p {
   margin-top: 18px;
-  letter-spacing: 1px;
-  line-height: 1.5;
+  letter-spacing: 0.6px;
+  line-height: 1.6;
 }
 /* ................................. */
 /* ......... PROJECTS SECTION .......*/
@@ -209,14 +208,13 @@
   padding: 6.25rem 0;
   background-color: var(--bg-light);
 }
-.header-box {
+.projects-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
   padding: 0 16px;
+  text-align: center;
 }
-
 .btn-bottom {
   display: none;
   text-align: center;
@@ -330,6 +328,7 @@ textarea {
 .contact__form .btn {
   /* width: max-content; */
   margin-top: 2rem;
+  font-family: var(--font-sans-serif);
 }
 .contact__form .btn:hover {
   background-color: var(--color-light-2);
@@ -422,22 +421,23 @@ textarea {
   /* about */
   .about-content {
     width: 100%;
-    padding: 1rem 4rem;
+    padding: 1rem 6rem;
   }
   .about-content .heading-secondary {
     letter-spacing: -1px;
     padding: 0.8rem 0;
   }
-  /* .about-content .btn {
-    margin-top: 2rem;
-  } */
   .about-bg {
     width: 100%;
     height: 700px;
     background-image: url(../img/About.jpg);
     background-size: cover;
     background-position: center;
-    margin-top: 3rem;
+    margin: 2rem 1rem 0 1rem;
+  }
+  /* services */
+  .services-box-1 {
+    padding: 0 3rem;
   }
   /* projects */
   .project--card {
@@ -500,7 +500,6 @@ textarea {
     margin: 0;
   }
   .section-design .main-paragraph {
-    font-size: 1rem;
     padding: 0.5rem 2rem;
   }
   .card-wrapper {
@@ -518,15 +517,12 @@ textarea {
   .about-content {
     padding: 0 0.5rem;
   }
-  .about-content .heading-secondary {
-    font-size: 3.2rem;
+  .about-content .btn {
+    margin-bottom: 2rem;
   }
-  .about-content .main-paragraph {
-    font-size: 1.2rem;
-  }
-
   .about-bg {
     height: 600px;
+    margin: 0 auto;
   }
   /* services */
   .section-services {
@@ -545,7 +541,7 @@ textarea {
   .step-5,
   .step-6 {
     width: 100%;
-    padding: 0 30px;
+    padding: 0 20px;
     margin-bottom: 50px;
   }
   .step-6 {
@@ -555,7 +551,7 @@ textarea {
   .section-projects {
     padding: 4.25rem 0;
   }
-  .header-box {
+  .projects-header {
     flex-direction: column;
   }
   .project--card {
@@ -563,8 +559,6 @@ textarea {
     padding: 1rem 3rem;
   }
   .project--card .project-title h4 {
-    font-size: 2.2rem;
-    letter-spacing: -0.8px;
     width: max-content;
     line-height: 1.1;
     text-align: center;
@@ -579,19 +573,6 @@ textarea {
   /* contact */
   .section-contact {
     padding: 4.25rem 2rem;
-  }
-}
-@media (max-width: 668px) {
-  .project--card {
-    padding: 1rem 1.5rem;
-  }
-  .project--card .project-title h4 {
-    font-size: 2rem;
-    letter-spacing: -0.8px;
-    width: max-content;
-    line-height: 1.1;
-    text-align: center;
-    padding: 0.5rem 1.5rem;
   }
 }
 @media (max-width: 568px) {
@@ -620,8 +601,7 @@ textarea {
     padding: 1rem;
   }
   .project--card .project-title h4 {
-    font-size: 1.6rem;
-    padding: 0.3rem 1rem;
+    padding: 0.5rem 1.5rem;
   }
   /* contact */
   .section-contact {
@@ -637,29 +617,25 @@ textarea {
   .header-mobile__text-box {
     padding: 3rem 1rem;
   }
-
+  .header-mobile__text-box .heading-primary--main {
+    font-size: 40px;
+    padding: 0 1rem;
+  }
   .header-mobile__text-box .heading-primary--sub {
     font-size: 12px;
-  }
-  .header-mobile__text-box .btn {
-    /* font-size: 12px; */
   }
   /* design */
   .section-design {
     padding: 2rem 0;
   }
-  .section-design .heading-secondary {
-    font-size: 2.2rem;
-  }
   .section-design .main-paragraph {
-    font-size: 1rem;
     padding: 0.5rem 1rem;
   }
   .design-container {
     margin-top: 1rem;
   }
   .card__heading {
-    font-size: 24px;
+    font-size: 20px;
     padding: 0.5rem 0;
   }
   /* about */
@@ -669,43 +645,45 @@ textarea {
   .about-content {
     padding: 0 0.5rem;
   }
-  .about-content .heading-secondary {
-    font-size: 2.2rem;
-  }
-  .about-content .main-paragraph {
-    font-size: 1rem;
-  }
-  .about-content .btn {
-    font-size: 0.8rem;
-    width: 100%;
-    text-align: center;
-  }
   .about-bg {
     height: 400px;
-  }
-  /* services */
-  .services-box-1 .heading-secondary {
-    font-size: 2.2rem;
+    margin-bottom: 2rem;
   }
   /* projects */
-  .project-name h4 {
-    font-size: 1.4rem;
+  .project--card {
+    padding-top: 0;
   }
-  .section-projects .heading-secondary {
-    font-size: 2.2rem;
+  .project--card:last-of-type {
+    padding-bottom: 0;
   }
+
   /* contact */
   .contact__form {
     max-width: 90%;
   }
 }
 @media (max-width: 350px) {
+  /* header */
   .header-mobile__text-box .heading-primary--main {
-    font-size: 40px;
+    font-size: 35px;
     padding: 0;
   }
   .header-mobile__text-box .heading-primary--sub {
     font-size: 11px;
     letter-spacing: 2.5px;
+  }
+  /* projects */
+  .section-projects {
+    padding: 3.25rem 0;
+  }
+  .project--card {
+    padding: 0.5rem 0;
+  }
+  .project--card .project-title h4 {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+  .footer__logo {
+    width: 16rem;
   }
 }

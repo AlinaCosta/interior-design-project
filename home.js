@@ -7,6 +7,7 @@ menuIcon.addEventListener('click', () => {
   navMenu.classList.toggle('nav-active');
   menuIcon.classList.toggle('close-icon');
 });
+
 links.forEach((link) => {
   link.addEventListener('click', () => {
     navMenu.classList.remove('nav-active');
@@ -25,12 +26,14 @@ const formError = document.querySelector('.submit-error');
 
 nameInput.addEventListener('change', function (event) {
   const value = event.target.value;
+
   if (value.length < 3) {
     nameError.innerHTML = 'Name must contain at least 3 characters';
   } else {
     nameError.innerHTML = '';
   }
 });
+
 emailInput.addEventListener('change', function (event) {
   const value = event.target.value;
   if (
@@ -53,6 +56,7 @@ form.addEventListener('submit', function (event) {
   const emailIsValid = emailValue.match(
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
   );
+
   if (nameValue === '') {
     nameError.innerHTML = 'This field is required.';
   }
@@ -65,11 +69,12 @@ form.addEventListener('submit', function (event) {
     formError.innerHTML = '';
     formResult.classList.add('success');
     formResult.innerHTML = `Thank you <strong>${nameValue}</strong> for reaching out! We've received your response and will be in touch if there's a fitting opportunity.`;
-    form.reset();
 
     setTimeout(function () {
       formResult.classList.remove('success');
       formResult.innerHTML = ``;
     }, 3000);
+
+    form.reset();
   }
 });

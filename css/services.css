@@ -1,55 +1,16 @@
-/* .navigation {
-  position: static;
-} */
 .p-services {
   background-color: var(--color-white);
+  margin-top: 90px;
 }
 .carousel {
   position: relative;
   height: 80vh;
   width: 100%;
 }
-.carousel__slide {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: var(--bg-light);
-  display: flex;
-  height: 80vh;
-}
-.carousel__image {
-  width: calc(100% / 2);
-  height: 100%;
-  object-position: right;
-  object-fit: cover;
-}
-.carousel__content {
-  width: calc(100% / 2);
-  padding: 0 6rem 0 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.carousel__content .heading-secondary {
-  letter-spacing: -1px;
-  padding: 1.5rem 0 0.5rem 0;
-  text-transform: capitalize;
-  color: var(--color-dark-2);
-  text-align: center;
-}
-.carousel__content .main-paragraph {
-  text-align: center;
-}
-.carousel__content img {
-  display: block;
-  height: 75px;
-  width: 100%;
-}
-.carousel__tack-container {
+.carousel__track-container {
   height: 100%;
   position: relative;
+  /* to hide the other slides */
   overflow: hidden;
 }
 .carousel__track {
@@ -58,6 +19,14 @@
   list-style: none;
   position: relative;
   transition: transform 1s ease;
+}
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: var(--bg-light);
+  display: flex;
+  height: 80vh;
 }
 .carousel__button {
   position: absolute;
@@ -78,6 +47,33 @@
   font-size: 30px;
   color: var(--color-dark-2);
 }
+.carousel__image {
+  width: calc(100% / 2);
+  height: 100%;
+  object-position: right center;
+  object-fit: cover;
+}
+.carousel__content {
+  width: calc(100% / 2);
+  padding: 0 6rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.carousel__content .heading-secondary {
+  letter-spacing: -1px;
+  padding: 1.5rem 0 0.5rem 0;
+  color: var(--color-dark-2);
+}
+
+.carousel__content img {
+  display: block;
+  height: 75px;
+  width: 100%;
+}
+
 .carousel__nav {
   display: flex;
   justify-content: center;
@@ -119,13 +115,12 @@
 }
 .promises .main-paragraph {
   font-size: 14px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   line-height: 20px;
 }
 .services-faq {
   display: flex;
   min-height: 100vh;
-  /* overflow: hidden; */
   background-color: var(--bg-light);
 }
 .services-faq__left {
@@ -138,10 +133,10 @@
 }
 .services-faq__right {
   width: calc(100% / 2);
-  color: var(--color-dark-2);
-  padding: 3rem 2rem;
-  letter-spacing: 0.04rem;
-  line-height: 1.2;
+  color: var(--color-dark);
+  padding: 3rem;
+  letter-spacing: 0.8px;
+  line-height: 1.4;
 }
 .services-faq__right h2 {
   font-size: 2rem;
@@ -157,8 +152,6 @@
 }
 .accordion-header button {
   font-size: 1.2rem;
-  /* width: 1rem; */
-  /* height: 2rem; */
   color: var(--color-dark-2);
   background-color: transparent;
   border: none;
@@ -173,7 +166,7 @@
 /* when the accordion item is active,  target the accordion body */
 .accordion-item.active .accordion-body {
   display: block;
-  animation: fade 1s ease;
+  animation: fade 0.5s ease;
 }
 
 @keyframes fade {
