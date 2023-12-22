@@ -101,7 +101,18 @@
     </nav>
     <main>
       <section id="p_about" class="p_about">
-        <div class="p_about-photo"></div>
+        <div class="p_about-photo">
+          <div class="play-icon">
+            <div class="play-circle center-it">
+              <a href="#popup">
+                <span class="material-icons play_arrow-icon center-it">
+                  play_arrow
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="p_about-photo"></div> -->
         <div class="p_about-header container">
           <span class="subheading">OUR VISION</span>
           <h2 class="heading-secondary">
@@ -329,6 +340,22 @@
         <p class="copyright">STUDIO MCGEE &copy;2023 | Made By Alina</p>
       </div>
     </footer>
+    <div id="popup" class="popup">
+      <div class="popup__content">
+        <iframe
+          class="popup-video"
+          src="https://www.youtube.com/embed/vSJHVmPTltM"
+          title="Let us
+          introduce ourselves!"
+          frameborder="0"
+          allow="accelerometer; autoplay;
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+          web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <a href="#p_about" class="popup__close">&times;</a>
+    </div>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="/home.js"></script>
     <script src="about.js"></script>

@@ -656,6 +656,10 @@ textarea {
   .project--card:last-of-type {
     padding-bottom: 0;
   }
+  .project--card .project-title h4 {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
 
   /* contact */
   .contact__form {
@@ -679,10 +683,7 @@ textarea {
   .project--card {
     padding: 0.5rem 0;
   }
-  .project--card .project-title h4 {
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-  }
+
   .footer__logo {
     width: 16rem;
   }
